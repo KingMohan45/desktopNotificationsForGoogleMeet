@@ -1,0 +1,19 @@
+{
+
+  "description": "Desktop notifications for Google meet messages",
+  "manifest_version": 2,
+  "name": "googleMeetNofify",
+  "version": "1.0",
+  "homepage_url": "https://github.com/KingMohan45/desktopNotificationsForGoogleMeet",
+  "icons": {
+    "48": "icons/g17.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://meet.google.com/*"],
+      "js": ["desktopNotify.js"]
+    }
+  ]
+
+}
